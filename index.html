@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Logic Gate Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Digital Logic Gate Simulator</h1>
+        <p>Electronics and Communication Engineering</p>
+    </header>
+
+    <div class="container">
+
+        <h2>Select Logic Gate</h2>
+
+        <select id="gate">
+            <option value="AND">AND Gate</option>
+            <option value="OR">OR Gate</option>
+            <option value="NOT">NOT Gate</option>
+            <option value="NAND">NAND Gate</option>
+            <option value="NOR">NOR Gate</option>
+            <option value="XOR">XOR Gate</option>
+            <option value="XNOR">XNOR Gate</option>
+        </select>
+
+        <h2>Input Values</h2>
+
+        <label>Input A:</label>
+        <select id="inputA">
+            <option value="0">0</option>
+            <option value="1">1</option>
+        </select>
+
+        <label>Input B:</label>
+        <select id="inputB">
+            <option value="0">0</option>
+            <option value="1">1</option>
+        </select>
+
+        <button onclick="calculate()">Calculate Output</button>
+
+        <div class="result">
+            <h2>Output</h2>
+            <p id="output">Result will appear here</p>
+        </div>
+
+        <h2>Truth Table</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Input A</th>
+                    <th>Input B</th>
+                    <th>Output</th>
+                </tr>
+            </thead>
+            <tbody id="truthTable"></tbody>
+        </table>
+
+    </div>
+
+    <footer>
+        <p>ECE Project | Digital Logic Gate Simulator</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
